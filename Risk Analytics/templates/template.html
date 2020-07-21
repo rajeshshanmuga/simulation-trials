@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Template Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/static/css/bootstrap-float-label.min.css"/>
+        <link rel="stylesheet/less" type="text/css" href="/static/css/styles.less" />
+        <link rel="stylesheet" href="/static/css/bootstrap-tagsinput.css" />
+        <link rel="stylesheet" href="/static/css/jquery-ui.css">
+    </head>
+    <body>
+        <!-- Header Search Bar -->
+        <header class="fixed-top container-fluid header-fixed">
+            <div class="text-center py-2 ui-widget">
+                <input type="text" name="searchValue" id="myInput" placeholder="Search for names..">
+            </div>
+        </header>
+
+        <!-- Suggestion layout -->
+        <section class="chart-layout">
+            <div class="container d-flex flex-wrap append-charts" id="questionsTemp">
+            </div>
+            <div class="container append-charts chart-cont" id="chart-diagram">
+                <!-- <div class="chart-list" style="height: auto"> -->
+                    <!--  -->
+                <!-- </div> -->
+            </div>
+        </section>
+
+
+        <!-- File upload popup -->
+        <section id="fileuploadpopup" class="modal">
+            <div class="model-info modal-content">
+                <div class="file-upload">
+                    <input type="file" class="fileupload" id="file" name="file" autocomplete="off" required accept=".csv"/>
+                    <input type="submit" style="display: none;"/>
+                    <img src="/static/image/csv-icon.svg">
+                    <h5>Click to upload</h5>
+                    <p>Support: dui, pharetra, porttitor</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uploading -->
+        <section id="detail" class="modal">
+            <div class="model-info modal-upload">
+                <div class="upload-content">
+                    <h5>Upload file: Poject orange</h5>
+                    <p><span id="status">0%</span> | 10 seconds left</p>
+                    <div class="progress">
+                        <div class="progress-bar" id="progressbar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Detail popup -->
+        <section id="detail-info" class="modal">
+            <div class="model-info modal-detail">
+                <div class="header">
+                    <h5>Hendrerit faucibus.</h5>
+                    <p>Vulputate amet quam senectus orci, a dui metus.</p>
+                </div>
+                <div class="body">
+                    <div class="tag-info" id="businessNames"></div>
+                </div>
+                <div class="footer">
+                    <span id="back-btn">Back</span>
+                    <span id="final-btn">Submit</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Receiving information progess bar -->
+        <section id="loader-icon" class="modal">
+            <div class="model-info modal-upload">
+                <div class="upload-content">
+                    <h5>Receiving information: Poject orange <img class="loader-img" src="/static/image/loader.svg"/></h5>
+                    <p><span id="loader-status">0%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="loader-progressbar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- JavaScript -->
+        <script src="/static/js/jquery-3.1.1.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/bootstrap-tagsinput.js"></script>
+        <script src="/static/js/jquery-ui.js"></script>
+        <script src="/static/js/less.min.js" ></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="/static/js/app.js"></script>
+    </body>
+</html>

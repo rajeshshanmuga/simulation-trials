@@ -1,0 +1,10 @@
+{"factors": [
+  {"factor_name": "Sex", "range": ["male", "female"], "interval": null, "type": "categorical"},
+  {"factor_name": "Housing", "range": ["own", "free", "rent"], "interval": null, "type": "categorical"},
+  {"factor_name": "Saving accounts", "range": ["no_inf", "little", "quite rich", "rich", "moderate"], "interval": null, "type": "categorical"},
+  {"factor_name": "Checking account", "range": ["little", "moderate", "no_inf", "rich"], "interval": null, "type": "categorical"},
+  {"factor_name": "Purpose", "range": ["radio/TV", "education", "furniture/equipment", "car", "business", "domestic appliances", "repairs", "vacation/others"], "interval": null, "type": "categorical"},
+  {"factor_name": "Job", "range": ["unskilled and non-resident", "unskilled and resident", "skilled", "highly skilled"], "interval": null, "type": "categorical"},
+  {"factor_name": "Credit amount", "range": [250.0, 18424.0], "interval": 0.5, "type": "continous"},
+  {"factor_name": "Age", "range": [19, 75], "interval": 1, "type": "categorical"},
+  {"factor_name": "Duration in Months", "range": [4, 72], "interval": 1, "type": "categorical"}]}

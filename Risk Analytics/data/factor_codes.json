@@ -1,0 +1,7 @@
+{"sex": {"female": 0, "male": 1},
+  "Housing": {"free": 0, "own": 1, "rent": 2},
+  "Saving_accounts": {"little": 0, "moderate": 1, "no_inf": 2, "quite rich": 3, "rich": 4},
+  "Checking_account": {"little": 0, "moderate": 1, "no_inf": 2, "rich": 3},
+  "Purpose": {"business": 0, "car": 1, "domestic appliances": 2, "education": 3, "furniture/equipment": 4, "radio/TV": 5, "repairs": 6, "vacation/others": 7},
+  "Risk": {"0": "bad", "1": "good"},
+  "job": {"unskilled and non-resident": 0, "unskilled and resident": 1, "skilled": 2, "highly skilled": 3}}
