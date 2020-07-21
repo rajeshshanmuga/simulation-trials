@@ -10,6 +10,7 @@ RUN pip install --upgrade pip && \
 
 COPY . /app/
 
+# Fixme: Change port
 EXPOSE 8501
 
 
