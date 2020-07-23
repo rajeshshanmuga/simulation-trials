@@ -45,13 +45,21 @@ duration = st.sidebar.slider(label='Duration in Months', min_value=duration[0][0
                [values['interval'] for values in factors if values['factor_name'] == 'Duration in Months'][0])
 
 # Organises the input factors for the prediction
-factors = ut.factors_organiser(age, sex, job, housing, saving_accounts, checking_account,
-                                   ca, duration, purpose)
+factors = ut.factors_organiser(age=age, sex=sex, job=job, housing=housing, saving_accounts=saving_accounts,
+                               checking_account=checking_account, credit_amount=ca, duration=duration, purpose=purpose)
+
 # Model prediction
-out = mp.prob_prdictor(factors)
+model = mp.ModelPredictor(factors)
+
+out = model.prob_predictor()
 
 out = pd.DataFrame.from_dict(out, orient='index')
 st.bar_chart(data=out)
+
+feature_importance = model.feature_importance
+feature_importance = pd.DataFrame.from_dict(feature_importance, orient='index')
+
+st.bar_chart(data=feature_importance)
 
 
 
